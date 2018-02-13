@@ -148,7 +148,7 @@ public class snakes {
 					}
 					else if(b[x+hxd][y+hyd].getBackground() == r) {
 						sc++;
-						nf = 0;
+						nf--;
 					}
 					b[x+hxd][y+hyd].setBackground(gr);
 					b[x][y].setText("");
