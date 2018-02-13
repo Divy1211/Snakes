@@ -23,7 +23,7 @@ public class snakes {
 			}
 			if(ra.nextInt(10) == 0) {
 				c = 0;
-				sco++;
+				nf++;
 			}
 		}
 	}
@@ -54,7 +54,7 @@ public class snakes {
 				}
 				else if(b[x+hxd][y+hyd].getBackground() == r) {
 					sc++;
-					nf = 0;
+					nf--;
 				}
 				b[x+hxd][y+hyd].setBackground(gr);
 				b[x][y].setText("");
@@ -251,8 +251,8 @@ public class snakes {
 						System.exit(0);
 					}
 					if(nf == 0) {
-						food();
 						nf++;
+						food();
 					}
 					co = 0;
 					try {
