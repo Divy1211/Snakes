@@ -13,10 +13,15 @@ public class snakes {
 	Thread thread1 = null;
 	public void food() {
 		Random ra = new Random();
-		int x = ra.nextInt(48);
-		int y = ra.nextInt(48);
-		if(b[x][y].getBackground() == bl)
-			b[x][y].setBackground(r);
+		int c = 0;
+		while(c == 0) {
+			int x = ra.nextInt(48);
+			int y = ra.nextInt(48);
+			if(b[x][y].getBackground() == bl) {
+				b[x][y].setBackground(r);
+				c++;
+			}
+		}
 	}
 	public void min(long n[][]) {
 		int x = 0,y = 0;
