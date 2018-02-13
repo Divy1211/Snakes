@@ -88,7 +88,7 @@ public class snakes {
 					}
 					else if(b[0][y+hyd].getBackground() == r) {
 						sc++;
-						nf = 0;
+						nf--;
 					}
 					b[0][y+hyd].setBackground(gr);
 					b[x][y].setText("");
@@ -103,7 +103,7 @@ public class snakes {
 					}
 					else if(b[47][y+hyd].getBackground() == r) {
 						sc++;
-						nf = 0;
+						nf--;
 					}
 					b[47][y+hyd].setBackground(gr);
 					b[x][y].setText("");
@@ -118,7 +118,7 @@ public class snakes {
 					}
 					else if(b[x+hxd][47].getBackground() == r) {
 						sc++;
-						nf = 0;
+						nf--;
 					}
 					b[x+hxd][47].setBackground(gr);
 					b[x][y].setText("");
@@ -133,7 +133,7 @@ public class snakes {
 					}
 					else if(b[x+hxd][0].getBackground() == r) {
 						sc++;
-						nf = 0;
+						nf--;
 					}
 					b[x+hxd][0].setBackground(gr);
 					b[x][y].setText("");
