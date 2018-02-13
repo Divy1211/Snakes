@@ -21,6 +21,10 @@ public class snakes {
 				b[x][y].setBackground(r);
 				c++;
 			}
+			if(ra.nextInt(10) == 0) {
+				c = 0;
+				sco++;
+			}
 		}
 	}
 	public void min(long n[][]) {
